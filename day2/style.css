@@ -1,0 +1,32 @@
+:root {
+  height: 100%;
+  width: 100%;
+  background: black;
+  font-family: Poppins, Arial, Helvetica, sans-serif;
+  color: white;
+}
+
+.glow {
+  text-shadow: 0px 0px 50px rgba(255, 19, 132, 0.6), 0px 0px 35px rgba(255, 19, 132, 0.25);
+}
+
+.fof-numbers {
+  text-align: center;
+}
+
+.fof-numbers .fof {
+  font-family: "Josefin Sans", Arial, Helvetica, sans-serif;
+  font-size: 30rem;
+  width: 100vw;
+}
+
+.text {
+  text-align: center;
+  font-size: 2em;
+}
+
+.text .description {
+  width: 50vw;
+  display: inline-block;
+}
+/*# sourceMappingURL=style.css.map */
