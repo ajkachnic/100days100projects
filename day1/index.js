@@ -7,7 +7,11 @@ function generateInt(min, max) {
     max = Math.floor(max);
     return Math.floor(Math.random() * (max - min + 1)) + min
 }
-
-gen.addEventListener('click', () => {
+function showInt() {
     result.innerText = generateInt(min.value, max.value)
+}
+gen.addEventListener('click', () => {
+    showInt()
 })
+
+showInt()
