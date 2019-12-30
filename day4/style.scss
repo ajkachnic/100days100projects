@@ -1,0 +1,70 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+:root {
+  //--clr-primary: #ee6352;
+  --clr-primary:#1187fc;
+  --clr-dark: #333;
+  --clr-neutral: #ddd;
+  --clr-light: #fff;
+}
+
+
+body {
+  font-family: basic-sans, sans-serif;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.125em;
+  line-height: 1.6;
+  color: var(--clr-body);
+  background: var(--clr-neutral);
+  overflow-x: hidden;
+}
+
+a { color: var(--clr-primary); }
+
+.content {
+  background: var(--clr-light);
+  width: 70vw;
+  padding: 3em;
+  box-shadow: 0 0 3em rgba(0,0,0,.15);
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+
+.title {
+  margin: 0 0 .5em;
+  font-weight: 900;
+  color: var(--clr-primary);
+  line-height: .8;
+}
+label {
+  font-weight: 600;
+  font-size: 1.25em;
+}
+input {
+  font-size:1.125em;
+  margin:1rem 0;
+}
+button {
+  background: var(--clr-primary);
+  color:var(--clr-light);
+  border:none;
+  padding:0rem 1rem;
+  margin:1rem 0;
+  border-radius: 15px;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+.lyrics {
+  p {
+    overflow-y: scroll;
+    height:50vh;
+
+  }
+}
