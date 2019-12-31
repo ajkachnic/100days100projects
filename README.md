@@ -5,3 +5,5 @@
 * Random Number Picker
 * 404 Page
 * Dad jokes App
+* Lyrics Finder
+* Currency Converter
