@@ -1,0 +1,63 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  font-family: Lato;
+}
+
+:root {
+  //--clr-primary: #ee6352;
+  --clr-primary:#ff0062;
+  --clr-dark: #333;
+  --clr-neutral: #ddd;
+  --clr-light: #fff;
+}
+
+
+body {
+  font-family: Lato;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5em;
+  line-height: 1.6;
+  color: var(--clr-body);
+  background: var(--clr-neutral);
+  overflow-x: hidden;
+}
+
+a { color: var(--clr-primary); }
+
+.content {
+  background: var(--clr-light);
+  width: 80vw;
+  padding: 3em;
+  box-shadow: 0 0 3em rgba(0,0,0,.15);
+}
+
+.title {
+  margin: 0 0 .5em;
+  font-weight: 900;
+  color: var(--clr-primary);
+  line-height: .8;
+}
+button {
+    background: none;
+    border:4px solid var(--clr-primary);
+    color: var(--clr-primary);
+    font-size: 1.125em;
+    padding:.5rem;
+    border-radius: 25px;
+    font-weight: bold;
+}
+
+.author {
+    opacity: .5;
+    font-weight: 400;
+}
+
+.quote-body {
+    font-weight: bold;
+    font-size: 1.125em;
+} 

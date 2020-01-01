@@ -7,3 +7,4 @@
 * Dad jokes App
 * Lyrics Finder
 * Currency Converter
+* Quote Generator
