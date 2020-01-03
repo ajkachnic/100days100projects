@@ -8,3 +8,4 @@
 * Lyrics Finder
 * Currency Converter
 * Quote Generator
+* Weight Converter
