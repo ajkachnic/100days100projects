@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Weight Converter</title>
+
+    <link rel="stylesheet" href="https://use.typekit.net/qhm8wqj.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="content">
+        <h1 class="title">Weight Converter</h1>
+        <form class="split">
+            <div class="from">
+                <select name="fromType" id="fromType">
+                    <option value="lb">Pounds (lbs)</option>
+                    <option value="oz">Ounces</option>
+                    <option value="g">Grams</option>
+                    <option value="kg">Kilograms</option>
+                </select>
+                <input step="0.0000001" type="number" id="fromNumber">
+            </div>
+            <div class="to">
+                <select name="toType" id="toType">
+                    <option value="lb">Pounds (lbs)</option>
+                    <option value="oz">Ounces</option>
+                    <option value="g">Grams</option>
+                    <option value="kg">Kilograms</option>
+                </select>
+                <input step="0.0000001" type="number" id="toNumber">
+            </div>
+        </form>
+    </div>
+</body>
+<script src="index.js"></script>
+</html>
