@@ -2,10 +2,14 @@
 > An Idea "Stolen" from Florin Pop
 
 ## Projects So Far
-* Random Number Picker
-* 404 Page
-* Dad jokes App
-* Lyrics Finder
-* Currency Converter
-* Quote Generator
-* Weight Converter
+1. Random Number Picker
+2. 404 Page
+3. Dad jokes App
+4. Lyrics Finder
+5. Currency Converter
+6. Quote Generator
+7. Weight Converter
+8. Radical Simplifier
+9. Aaaah Translator
+10. Event Code Displayer
+11. Lorem Ipsum Generator
