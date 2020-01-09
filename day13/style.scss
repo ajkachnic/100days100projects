@@ -1,0 +1,92 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+:root {
+  //--clr-primary: #ee6352;
+  --clr-primary:#1187fc;
+  --clr-dark: #333;
+  --clr-neutral: #ddd;
+  --clr-light: #fff;
+}
+
+
+body {
+  font-family: basic-sans, sans-serif;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.125em;
+  line-height: 1.6;
+  color: var(--clr-body);
+  background: var(--clr-neutral);
+  overflow-x: hidden;
+}
+
+a { color: var(--clr-primary); }
+
+.content {
+  background: var(--clr-light);
+  width: 90vw;
+  height:90vh;
+  padding: 3em;
+  box-shadow: 0 0 3em rgba(0,0,0,.15);
+}
+
+.title {
+  margin: 0 0 .5em;
+  font-weight: 900;
+  color: var(--clr-primary);
+  line-height: .8;
+}
+
+.square-one {
+    background: #ff6f9f;
+    border-radius: 25px 0 0 0;
+    transition:all .25s;
+}
+
+
+.square-two {
+    background: #f5ff6f;
+    border-radius:  0 25px 0 0;
+    transition:all .25s;
+}
+
+.square-three {
+    background: #6fa9ff;
+    border-radius: 0 0 0 25px;
+    transition:all .25s;
+}
+
+
+.square-four {
+    background: #6fff9a;
+    border-radius:  0 0 25px 0;
+    transition:all .25s;
+}
+
+
+.square-one-glow {
+    background: #f5436f !important;
+}
+.square-two-glow {
+    background: #eaf737 !important;
+}
+.square-three-glow {
+    background: #2b78ec !important;
+}
+.square-four-glow {
+    background: #29f065 !important;
+}
+
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width:100%;
+    height:100%;
+}
