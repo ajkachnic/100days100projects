@@ -1,3 +1,4 @@
+
 const start = document.getElementById('start');
 const rate = document.getElementById('rate');
 const end = document.getElementById('end');
@@ -30,4 +31,4 @@ rate.addEventListener('input', () => {
 
 start.value = 10;
 rate.value = 1.08;
-end.value = convertTo(start.value, rate.value);
+end.value = convertTo(start.value, rate.value); 
