@@ -49,4 +49,28 @@ a {
   color: var(--clr-primary);
   line-height: .8;
 }
+
+.grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  -ms-grid-rows: 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr;
+  height: 50vh;
+  width: 50vh;
+}
+
+.square {
+  border: 4px solid black;
+  display: -ms-grid;
+  display: grid;
+  font-family: basic-sans;
+  font-weight: 700;
+  font-size: 10vh;
+}
+
+.square span {
+  margin: auto;
+}
 /*# sourceMappingURL=style.css.map */
