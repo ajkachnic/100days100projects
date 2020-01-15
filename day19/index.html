@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Rock Paper Scissors</title>
+
+    <link rel="stylesheet" href="https://use.typekit.net/qhm8wqj.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="content">
+        <div>
+            <h2  id="score" class="score">0:0</h2>
+        </div>
+        <div class="choice" id="choice">
+            <div id="rock" class="option">
+                <img src="rock.svg" alt="">                  
+            </div>
+            <div id="paper" class="option">
+                <img src="paper.svg" alt="">
+            </div>
+            <div id="scissors" class="option">
+                    <img src="scissors.svg" alt="">               
+            </div>
+        </div>
+
+        <div class="result hidden" id="result">
+            <h2 id="result-header" class="hidden">Result: Opponent Wins!</h2>
+            <div id="opponent">
+
+            </div>
+            <div id="player">
+
+            </div>
+
+            <button id="again" class="hidden">Again!</button>
+        </div>
+    </div>
+</body>
+<script src="index.js"></script>
+</html>
