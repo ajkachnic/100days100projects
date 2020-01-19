@@ -12,7 +12,7 @@
   --clr-dark: #333;
   --clr-neutral: #ddd;
   --clr-light: #fff;
-  --min:35px;
+  --min:3vw;
 }
 
 body {
