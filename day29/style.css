@@ -1,0 +1,112 @@
+@import url("https://rsms.me/inter/inter.css");
+html {
+  font-family: 'Inter', sans-serif;
+}
+
+@supports (font-variation-settings: normal) {
+  html {
+    font-family: 'Inter var', sans-serif;
+  }
+}
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --clr-primary:#1187fc;
+  --clr-dark: #333;
+  --clr-neutral: #ddd;
+  --clr-light: #fff;
+  --yes:50%;
+  --no:50%;
+}
+
+body {
+  font-family: Inter, sans-serif;
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 1.125em;
+  line-height: 1.6;
+  color: var(--clr-body);
+  background: var(--clr-neutral);
+  overflow-x: hidden;
+}
+
+a {
+  color: var(--clr-primary);
+}
+
+.content {
+  background: var(--clr-light);
+  width: 100vw;
+  height: 100vh;
+  -webkit-box-shadow: 0 0 3em rgba(0, 0, 0, 0.15);
+          box-shadow: 0 0 3em rgba(0, 0, 0, 0.15);
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: var(--yes) var(--no);
+      grid-template-columns: var(--yes) var(--no);
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
+.content div {
+  margin: auto;
+  display: -ms-grid;
+  display: grid;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
+.content div span {
+  margin: auto;
+  font-size: 3em;
+  font-weight: 600;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
+.title {
+  margin: 0 0 .5em;
+  font-weight: 900;
+  color: var(--clr-primary);
+  line-height: .8;
+}
+
+.yes {
+  background: #1eff74;
+  height: 100%;
+  width: 100%;
+  margin: auto;
+  padding: auto;
+}
+
+.no {
+  height: 100%;
+  width: 100%;
+  background: #ff1e1e;
+}
+
+.undo {
+  position: absolute;
+  bottom: 15%;
+  font-size: 2rem;
+  opacity: 0;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+}
+/*# sourceMappingURL=style.css.map */
