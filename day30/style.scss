@@ -1,0 +1,103 @@
+@import url('https://rsms.me/inter/inter.css');
+html { font-family: 'Inter', sans-serif; }
+@supports (font-variation-settings: normal) {
+  html { font-family: 'Inter var', sans-serif; }
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  //--clr-primary: #ee6352;
+  --clr-primary:#1187fc;
+  --clr-dark: #333;
+  --clr-neutral: #ddd;
+  --clr-light: #fff;
+}
+
+
+body {
+  font-family: Inter, sans-serif;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.125em;
+  line-height: 1.6;
+  color: var(--clr-body);
+  background: var(--clr-neutral);
+  overflow-x: hidden;
+}
+
+a { color: var(--clr-primary); }
+
+.content {
+  background: radial-gradient(circle at center, #202020 0, #050505 100%);
+  width: 100vw;
+  height: 100vh;
+  box-shadow: 0 0 3em rgba(0,0,0,.15);
+  display:grid;
+}
+@keyframes loading {
+    0% {
+        font-size: 5rem;
+        color:#ed254e;
+    }
+    100% {
+        font-size:7rem;
+        color: #ef4c8b;
+    }
+}
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    height: 100vh;
+    width: 40vw;
+    margin: auto;
+}
+span {
+    margin:auto;
+    animation: loading 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    font-size: 5rem;
+    font-weight: 800;
+    color:#ed254e
+}
+.l {
+    animation-delay: .125s;
+}
+ 
+.o {
+    animation-delay: .25s;
+}
+
+.a {
+    animation-delay: .375s;
+}
+
+.d {
+    animation-delay: .5s; 
+}
+
+.i {
+    animation-delay: .625s;
+}
+
+.n {
+    animation-delay: .75s;  
+}
+
+.g {
+    animation-delay: .875s;
+}
+
+@media screen and (max-width: 500px) {
+    .container {
+        width:70vw;
+    }
+}
