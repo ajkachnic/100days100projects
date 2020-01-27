@@ -79,9 +79,9 @@ a { color: var(--clr-primary); }
 input {
     border:none;
     direction: rtl;
-    font-size: 4rem;
+    font-size: 6vw;
     font-weight: 800;
-    width:20vw;
+    width:15vw;
     text-align: center;
     transition: all .125s;
     &::placeholder {
