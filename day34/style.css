@@ -89,7 +89,7 @@ a {
   transition: all 1s;
   -webkit-box-shadow: rgba(0, 0, 0, 0.253) 0px 0px 5px;
           box-shadow: rgba(0, 0, 0, 0.253) 0px 0px 5px;
-  width: 20vw;
+  width: 60vw;
   height: 60vh;
   display: -ms-grid;
   display: grid;
