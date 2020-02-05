@@ -54,8 +54,8 @@ a {
   height: 100vh;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr 9fr;
-      grid-template-columns: 1fr 9fr;
+  -ms-grid-rows: 1fr 9fr;
+      grid-template-rows: 1fr 9fr;
 }
 
 .title {
