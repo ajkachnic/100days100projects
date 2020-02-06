@@ -47,7 +47,7 @@ function isContrastGood(){
     let background = Object.keys(rgbBackground).map(function (key) { return rgbBackground[key]; });
     let result = contrast( background, text)
         console.log(result)
-    if(result > 4) {
+    if(result > 5) {
         console.log('good')
     }
     else {
