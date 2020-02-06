@@ -1,0 +1,87 @@
+@import url("https://rsms.me/inter/inter.css");
+html {
+  font-family: 'Inter', sans-serif;
+}
+
+@supports (font-variation-settings: normal) {
+  html {
+    font-family: 'Inter var', sans-serif;
+  }
+}
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --clr-primary:#1187fc;
+  --clr-dark: #333;
+  --clr-neutral: #ddd;
+  --clr-light: #fff;
+  --background:#ffffff;
+  --text:#202020;
+}
+
+body {
+  font-family: Inter, sans-serif;
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 1.125em;
+  line-height: 1.6;
+  color: var(--clr-body);
+  background: var(--clr-neutral);
+  overflow-x: hidden;
+}
+
+a {
+  color: var(--clr-primary);
+}
+
+.content {
+  background: var(--clr-light);
+  width: 100vw;
+  height: 100vh;
+  background: var(--background);
+  display: -ms-grid;
+  display: grid;
+  -webkit-transition: background .35s;
+  transition: background .35s;
+}
+
+.content .color {
+  margin: auto;
+  padding: 6rem;
+  border-radius: 3rem;
+  -webkit-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.225);
+          box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.225);
+  text-align: center;
+}
+
+.content .color * {
+  color: var(--text);
+  font-weight: 700;
+  -webkit-transition: color .35s;
+  transition: color .35s;
+  opacity: 1;
+}
+
+.title {
+  margin: 0 0 .5em;
+  font-weight: 900;
+  color: var(--clr-primary);
+  line-height: .8;
+}
+/*# sourceMappingURL=style.css.map */
