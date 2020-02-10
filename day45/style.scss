@@ -1,0 +1,98 @@
+@import url('https://rsms.me/inter/inter.css');
+html { font-family: 'Inter', sans-serif; }
+@supports (font-variation-settings: normal) {
+  html { font-family: 'Inter var', sans-serif; }
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  //--clr-primary: #ee6352;
+  --clr-primary:#1187fc;
+  --clr-dark: #333;
+  --clr-neutral: #efefef;
+  --clr-light: #fff;
+}
+
+
+body {
+  font-family: Inter, sans-serif;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.125em;
+  line-height: 1.6;
+  color: var(--clr-body);
+  background: var(--clr-neutral);
+  overflow-x: hidden;
+}
+
+a { color: var(--clr-primary); }
+
+.content {
+  background: var(--clr-light);
+  width: 100vw;
+  height: 100vh;
+  display:grid;
+
+  .spinner {
+      //background: linear-gradient(to right, var(--clr-primary), var(--clr-neutral));
+      width:15rem;
+      height: 15rem;
+      border:25px solid var(--clr-neutral);
+      border-bottom: 25px solid var(--clr-primary);
+      margin:auto;
+      border-radius: 50%;
+
+      animation: Spin 2s linear infinite;
+        display: grid;
+      p {
+        margin: auto;
+        animation: PSpin 2s linear infinite;
+        font-weight: 700;
+      }
+  }
+
+}
+
+@keyframes Spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    35% {
+        transform: rotate(140deg);
+    }
+    50% {
+        transform: rotate(170deg);
+    }
+    70% {
+        transform: rotate(180deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes PSpin {
+    0% {
+        transform: rotate(360deg);
+    }
+    35% {
+        transform: rotate(220deg);
+    }
+    50% {
+        transform: rotate(190deg);
+    }
+    70% {
+        transform: rotate(180deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
