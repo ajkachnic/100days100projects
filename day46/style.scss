@@ -1,0 +1,78 @@
+@import url('https://rsms.me/inter/inter.css');
+html { font-family: 'Inter', sans-serif; }
+@supports (font-variation-settings: normal) {
+  html { font-family: 'Inter var', sans-serif; }
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  //--clr-primary: #ee6352;
+  --clr-primary:#1187fc;
+  --clr-dark: #333;
+  --clr-neutral: #eee;
+  --clr-light: #fff;
+}
+
+
+body {
+  font-family: Inter, sans-serif;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.125em;
+  line-height: 1.6;
+  color: var(--clr-body);
+  background: var(--clr-neutral);
+  overflow-x: hidden;
+}
+
+a { color: var(--clr-primary); }
+
+.content {
+  background: var(--clr-neutral);
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+
+}
+
+.btn {
+    box-shadow: 0px 0px 35px rgba(#333, .125);
+    background: white;
+    margin:auto;
+    display: grid;
+    border:none;
+    padding:.5rem 1rem;
+    border-radius: .25rem;
+    font-size: 1.5rem;
+    font-weight: 500;
+    position: relative;
+
+    &::before{
+        border-radius: .25rem;
+        content: "";
+        width: 50%;
+        height:100%;
+        background: black;
+        transition: width 1s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+        position: absolute;
+        left: 0;
+        top: 0;
+    }
+    &:hover::before {
+        background: black;
+        width:100%;
+    }
+}
+.btn__text {
+    color:var(--clr-light);
+    margin:auto;
+    mix-blend-mode: difference;
+}
