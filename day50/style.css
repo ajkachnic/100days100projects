@@ -1,0 +1,151 @@
+@import url("https://rsms.me/inter/inter.css");
+html {
+  font-family: "Inter", sans-serif;
+}
+
+@supports (font-variation-settings: normal) {
+  html {
+    font-family: "Inter var", sans-serif;
+  }
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --clr-primary:#1187fc;
+  --clr-dark: #333;
+  --clr-neutral: #efefef;
+  --clr-light: #fff;
+}
+
+body {
+  font-family: Inter, sans-serif;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.125em;
+  line-height: 1.6;
+  color: var(--clr-body);
+  background: var(--clr-neutral);
+  overflow-x: hidden;
+}
+
+a {
+  color: var(--clr-primary);
+}
+
+.content {
+  background: var(--clr-light);
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+}
+
+.card {
+  margin: auto;
+  width: 500px;
+  height: auto;
+  background: var(--clr-light);
+  box-shadow: 0px 0px 25px rgba(10, 10, 10, 0.25);
+  padding: 2rem;
+  position: relative;
+  display: grid;
+}
+
+.card__profile {
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  margin: 1rem 0;
+}
+
+.card__profile__image {
+  width: 65px;
+  height: 65px;
+  border-radius: 50%;
+}
+
+.card__profile__title {
+  font-size: 2rem;
+}
+
+.card__body {
+  font-size: 1.25rem;
+}
+
+.card__footer {
+  padding: 0.5rem 0;
+  box-shadow: 0px 0px 5px rgba(10, 10, 10, 0.25);
+  margin: 1rem 0 0 0;
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+}
+.card__footer svg {
+  cursor: pointer;
+}
+
+.card__footer__star-clicked {
+  fill: #e6e222;
+}
+
+.card__footer__like-clicked {
+  fill: #ff1b13;
+}
+
+@media (max-width: 600px) {
+  .card {
+    width: 400px;
+  }
+
+  .card__profile__image {
+    width: 50px;
+    height: 50px;
+  }
+
+  .card__profile__title {
+    font-size: 1.5rem;
+  }
+
+  .card__body {
+    font-size: 1rem;
+  }
+}
+.svg__container {
+  display: grid;
+}
+.svg__container svg {
+  margin: auto;
+}
+
+@media (max-width: 450px) {
+  .card {
+    width: 300px;
+  }
+
+  .card__profile__image {
+    width: 30px;
+    height: 30px;
+  }
+
+  .card__profile__title {
+    font-size: 1.25rem;
+  }
+
+  .card__body {
+    font-size: 0.75rem;
+  }
+}
+.svg__container {
+  display: grid;
+}
+.svg__container svg {
+  margin: auto;
+}
+
+/*# sourceMappingURL=style.css.map */
