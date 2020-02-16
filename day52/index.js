@@ -4,15 +4,15 @@ const commandments = document.getElementById('commandments');
 function checks() {
     if(lang.value == "english") {
         commandments.innerHTML =   `
-            <li>There are no stupid questions - just stupid people</li>
-            <li>If you don't have a headache, you're doing something wrong</li>
-            <li>Always show your code</li>
-            <li>Don't answer if you don't have a superiority complex</li>
-            <li value="6">Pay attention</li>
-            <li>Try not to catch the imposter syndrome. It's running rampant</li>
-            <li>It's flex or be flexed on</li>
-            <li>No Duplicates</li>
-            <li>No Duplicates</li>
+        <li>There are no stupid questions - just stupid people</li>
+        <li>If you don't have a headache, you're doing something wrong</li>
+        <li>Always show your code</li>
+        <li>Don't answer if you don't have a superiority complex</li>
+        <li value="6">Pay attention</li>
+        <li>Try not to catch the imposter syndrome. It's running rampant</li>
+        <li>Nevermind I fixed it</li>
+        <li>No Duplicates</li>
+        <li>No Duplicates</li>
         `
     }
     if(lang.value == "python") {
