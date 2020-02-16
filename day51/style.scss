@@ -1,0 +1,111 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    font-family: Inter, sans-serif;
+}
+
+:root {
+    //--clr-primary: #ee6352;
+    --clr-primary: #1187fc;
+    --clr-dark: #333;
+    --clr-neutral: #fefefe;
+    --clr-light: #fff;
+}
+
+
+body {
+    font-family: Inter, sans-serif;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.125em;
+    line-height: 1.6;
+    color: var(--clr-body);
+    background: var(--clr-neutral);
+    overflow-x: hidden;
+}
+
+a {
+    color: var(--clr-primary);
+}
+
+.content {
+    background: var(--clr-light);
+    // width: 70vw;
+    height: 70vh;
+    padding: 3em;
+    box-shadow: 0 0 1em rgba(0, 0, 0, .15);
+    display: grid;
+
+    * {
+        margin: auto;
+    }
+}
+
+.input__container {
+    position: relative;
+}
+
+input {
+    outline: none;
+    border: 0;
+    transition: border-bottom .5s;
+    border-bottom: 2px solid rgba(0, 0, 0, .15);
+
+    &:focus {
+        border-bottom: 2px solid #000000;
+
+    }
+
+    height: 2rem;
+    font-size: 1.25rem;
+}
+
+label {
+    font-weight: 600;
+}
+
+button {
+    background: var(--clr-primary);
+    color: var(--clr-light);
+
+    padding: .5rem 1rem;
+    border-radius: 12px;
+    border: none;
+    font-size: 1.25rem;
+}
+
+a {
+    font-weight: 600;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+@media (max-width:560px) {
+    input {
+        font-size: 1rem;
+    }
+    button {
+        font-size: 1rem;
+    }
+    a {
+        font-size: .75rem;
+    }
+}
+
+@media (max-width:400px) {
+    input {
+        font-size: .75rem;
+        width: 70vw;
+    }
+    button {
+        font-size: .75rem;
+    }
+    a {
+        font-size: .75rem;
+        text-align: center;
+    }
+    
+}
