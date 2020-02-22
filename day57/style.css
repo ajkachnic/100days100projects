@@ -1,0 +1,124 @@
+@import url("https://rsms.me/inter/inter.css");
+html {
+  font-family: 'Inter', sans-serif;
+}
+
+@supports (font-variation-settings: normal) {
+  html {
+    font-family: 'Inter var', sans-serif;
+  }
+}
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+:root {
+  --clr-primary:#1187fc;
+  --clr-dark: #333;
+  --clr-neutral: #ddd;
+  --clr-light: #fff;
+}
+
+body {
+  font-family: Inter, sans-serif;
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 1.125em;
+  line-height: 1.6;
+  color: var(--clr-body);
+  background: var(--clr-neutral);
+  overflow-x: hidden;
+}
+
+a {
+  color: var(--clr-primary);
+}
+
+.content {
+  background: var(--clr-light);
+  width: 100vw;
+  min-height: 100vh;
+}
+
+.title {
+  margin: 0 0 .5em;
+  font-weight: 900;
+  color: var(--clr-primary);
+  line-height: .8;
+}
+
+.hero {
+  height: 30rem;
+  display: -ms-grid;
+  display: grid;
+  background: #1e35b6;
+  color: white;
+  -ms-grid-rows: 60% auto;
+      grid-template-rows: 60% auto;
+}
+
+.hero h1 {
+  font-size: 15rem;
+}
+
+.hero * {
+  margin: auto;
+}
+
+.hero button {
+  background: white;
+  color: #333;
+  font-weight: 700;
+  border: none;
+  padding: 1rem;
+  border-radius: 12px;
+}
+
+.hero button a {
+  color: #333;
+  text-decoration: none;
+}
+
+.claims {
+  display: -ms-grid;
+  display: grid;
+  gap: 1rem;
+  -ms-grid-columns: (minmax(10rem, 25rem))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(10rem, 25rem));
+}
+
+.claims__card {
+  margin: 1rem;
+  background: rgba(100, 100, 100, 0.03);
+  -webkit-box-shadow: 0px 0px 12px rgba(51, 51, 51, 0.2);
+          box-shadow: 0px 0px 12px rgba(51, 51, 51, 0.2);
+  padding: 1rem;
+  display: -ms-grid;
+  display: grid;
+}
+
+.claims__card p {
+  margin: auto 1rem;
+  font-size: 2rem;
+}
+
+.claims__name {
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+/*# sourceMappingURL=style.css.map */
