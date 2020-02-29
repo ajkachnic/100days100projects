@@ -1,0 +1,110 @@
+@import url("https://rsms.me/inter/inter.css");
+html {
+  font-family: 'Inter', sans-serif;
+}
+
+@supports (font-variation-settings: normal) {
+  html {
+    font-family: 'Inter var', sans-serif;
+  }
+}
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --clr-primary:#1187fc;
+  --clr-dark: #333;
+  --clr-neutral: rgb(224, 224, 224);
+  --clr-light: #fff;
+}
+
+body {
+  font-family: Inter, sans-serif;
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 1.125em;
+  line-height: 1.6;
+  color: var(--clr-body);
+  background: var(--clr-neutral);
+  overflow-x: hidden;
+}
+
+a {
+  color: var(--clr-primary);
+}
+
+.content {
+  width: 100vw;
+  height: 100vh;
+  display: -ms-grid;
+  display: grid;
+  background: var(--clr-light);
+}
+
+.nav {
+  margin: auto;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  width: 30rem;
+  border-radius: .5rem;
+  background: #fff;
+  padding: 1rem;
+  -webkit-box-shadow: 20px 20px 60px #ccd4d9,  -20px -20px 60px #ffffff;
+          box-shadow: 20px 20px 60px #ccd4d9,  -20px -20px 60px #ffffff;
+}
+
+.nav__button {
+  display: -ms-grid;
+  display: grid;
+}
+
+.nav__button i {
+  margin: auto;
+  font-size: 2rem;
+}
+
+.nav__button * {
+  -webkit-transition: color .25s;
+  transition: color .25s;
+  color: #444;
+  cursor: pointer;
+}
+
+.nav__button:hover * {
+  color: var(--clr-primary);
+}
+
+p {
+  font-size: 1rem;
+  text-align: center;
+}
+
+@media (max-width: 500px) {
+  .nav {
+    width: 90vw;
+  }
+  p {
+    font-size: .75rem;
+  }
+  .nav__button i {
+    font-size: 1.25rem;
+  }
+}
+/*# sourceMappingURL=style.css.map */
