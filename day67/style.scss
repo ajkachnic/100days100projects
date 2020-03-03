@@ -1,0 +1,98 @@
+@import url('https://rsms.me/inter/inter.css');
+html { font-family: 'Inter', sans-serif; }
+@supports (font-variation-settings: normal) {
+  html { font-family: 'Inter var', sans-serif; }
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    font-family: Inter,'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin:0;
+    padding: 0;
+}
+
+:root {
+  //--clr-primary: #ee6352;
+  --clr-primary:#1187fc;
+  --clr-dark: #333;
+  --clr-neutral: #ddd;
+  --clr-light: #fff;
+
+}
+
+
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.125em;
+  line-height: 1.6;
+  color: var(--clr-dark);
+  background: var(--clr-primary);
+  overflow-x: hidden;
+}
+
+a { color: var(--clr-primary); }
+
+.content {
+  background: var(--clr-light);
+  width: 70vw;
+  padding: 3em;
+  box-shadow: 0 0 3em rgba(0,0,0,.15);
+}
+
+.title {
+  margin: 0 0 .5em;
+  font-weight: 900;
+  color: var(--clr-dark);
+  line-height: .8;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width:20rem;
+    gap:25px;
+}
+button {
+    padding: 1rem 1.5rem;
+    background: var(--clr-light);
+    border: 3px solid var(--clr-primary);
+    border-radius: 10px;
+    font-size: 1.25rem;
+    font-weight: 700;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, .15);
+
+    transition: color .4s, background .4s, box-shadow .4s;
+
+    &:hover {
+        background: var(--clr-primary);
+        color: var(--clr-light);
+        box-shadow: 0 7px 10px rgba(0, 0, 0, .15);
+    }
+}
+p {
+    margin: 2rem 0;
+}
+
+@media (max-width:550px) {
+    .buttons {
+        grid-template-columns: 1fr;
+        width: 100%;
+    }
+}
+
+@media (max-width:400px) {
+    .content {
+        width: 90vw;
+    }
+}
+
+@media (max-width:300px) {
+    .content {
+        width: 100vw;
+    }
+}

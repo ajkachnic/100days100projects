@@ -1,0 +1,120 @@
+@import url("https://rsms.me/inter/inter.css");
+html {
+  font-family: 'Inter', sans-serif;
+}
+
+@supports (font-variation-settings: normal) {
+  html {
+    font-family: 'Inter var', sans-serif;
+  }
+}
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: Inter,'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --clr-primary:#1187fc;
+  --clr-dark: #333;
+  --clr-neutral: #ddd;
+  --clr-light: #fff;
+}
+
+body {
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 1.125em;
+  line-height: 1.6;
+  color: var(--clr-dark);
+  background: var(--clr-primary);
+  overflow-x: hidden;
+}
+
+a {
+  color: var(--clr-primary);
+}
+
+.content {
+  background: var(--clr-light);
+  width: 70vw;
+  padding: 3em;
+  -webkit-box-shadow: 0 0 3em rgba(0, 0, 0, 0.15);
+          box-shadow: 0 0 3em rgba(0, 0, 0, 0.15);
+}
+
+.title {
+  margin: 0 0 .5em;
+  font-weight: 900;
+  color: var(--clr-dark);
+  line-height: .8;
+}
+
+.buttons {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  width: 20rem;
+  gap: 25px;
+}
+
+button {
+  padding: 1rem 1.5rem;
+  background: var(--clr-light);
+  border: 3px solid var(--clr-primary);
+  border-radius: 10px;
+  font-size: 1.25rem;
+  font-weight: 700;
+  -webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.15);
+          box-shadow: 0 3px 6px rgba(0, 0, 0, 0.15);
+  -webkit-transition: color .4s, background .4s, -webkit-box-shadow .4s;
+  transition: color .4s, background .4s, -webkit-box-shadow .4s;
+  transition: color .4s, background .4s, box-shadow .4s;
+  transition: color .4s, background .4s, box-shadow .4s, -webkit-box-shadow .4s;
+}
+
+button:hover {
+  background: var(--clr-primary);
+  color: var(--clr-light);
+  -webkit-box-shadow: 0 7px 10px rgba(0, 0, 0, 0.15);
+          box-shadow: 0 7px 10px rgba(0, 0, 0, 0.15);
+}
+
+p {
+  margin: 2rem 0;
+}
+
+@media (max-width: 550px) {
+  .buttons {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    width: 100%;
+  }
+}
+
+@media (max-width: 400px) {
+  .content {
+    width: 90vw;
+  }
+}
+
+@media (max-width: 300px) {
+  .content {
+    width: 100vw;
+  }
+}
+/*# sourceMappingURL=style.css.map */
