@@ -1,0 +1,128 @@
+@import url("https://rsms.me/inter/inter.css");
+html {
+  font-family: 'Inter', sans-serif;
+}
+
+@supports (font-variation-settings: normal) {
+  html {
+    font-family: 'Inter var', sans-serif;
+  }
+}
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --clr-primary:#1187fc;
+  --clr-dark: #333;
+  --clr-neutral: #eee;
+  --clr-light: #fff;
+  font-family: Inter, sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 1.125em;
+  line-height: 1.6;
+  color: var(--clr-body);
+  background: var(--clr-neutral);
+  overflow-x: hidden;
+}
+
+a {
+  color: var(--clr-primary);
+}
+
+.content {
+  padding: 3em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.dont-press {
+  padding: 2rem;
+  width: 17rem;
+  height: 17rem;
+  border-radius: 50%;
+  border: none;
+  background: #e9365d;
+  color: white;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.dont-press:hover {
+  background: #ee4a6e;
+  -webkit-animation-name: flashing;
+          animation-name: flashing;
+  -webkit-animation-duration: .25s;
+          animation-duration: .25s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes flashing {
+  0% {
+    background: #ee4a6e;
+    -webkit-transform: translate(-2px, 2px);
+            transform: translate(-2px, 2px);
+  }
+  50% {
+    background: #e61f1f;
+    -webkit-transform: translate(2px, -3px);
+            transform: translate(2px, -3px);
+  }
+  100% {
+    background: #ee4a6e;
+    -webkit-transform: translate(-2px, 2px);
+            transform: translate(-2px, 2px);
+  }
+}
+
+@keyframes flashing {
+  0% {
+    background: #ee4a6e;
+    -webkit-transform: translate(-2px, 2px);
+            transform: translate(-2px, 2px);
+  }
+  50% {
+    background: #e61f1f;
+    -webkit-transform: translate(2px, -3px);
+            transform: translate(2px, -3px);
+  }
+  100% {
+    background: #ee4a6e;
+    -webkit-transform: translate(-2px, 2px);
+            transform: translate(-2px, 2px);
+  }
+}
+
+.title {
+  margin: 0 0 .5em;
+  font-weight: 900;
+  color: var(--clr-primary);
+  line-height: .8;
+}
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,86 @@
+@import url('https://rsms.me/inter/inter.css');
+html { font-family: 'Inter', sans-serif; }
+@supports (font-variation-settings: normal) {
+  html { font-family: 'Inter var', sans-serif; }
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding:0;
+}
+
+:root {
+  //--clr-primary: #ee6352;
+  --clr-primary:#1187fc;
+  --clr-dark: #333;
+  --clr-neutral: #eee;
+  --clr-light: #fff;
+  font-family: Inter, sans-serif;
+}
+
+
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.125em;
+  line-height: 1.6;
+  color: var(--clr-body);
+  background: var(--clr-neutral);
+  overflow-x: hidden;
+}
+
+a { color: var(--clr-primary); }
+
+.content {
+  //background: var(--clr-light);
+  padding: 3em;
+  //box-shadow: 0 0 3em rgba(0,0,0,.15);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.dont-press {
+    padding:2rem;
+    width:17rem;
+    height:17rem;
+    border-radius: 50%;
+    border: none;
+    background: #e9365d;
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 700;
+
+    &:hover {
+        background: #ee4a6e;
+        animation-name: flashing;
+        animation-duration: .25s;
+        animation-iteration-count: infinite;
+    }
+}
+
+@keyframes flashing {
+    0% {
+        background: #ee4a6e;
+        transform: translate(-2px, 2px);
+        
+    }
+    
+    50% {
+        background: #e61f1f;
+        transform: translate(2px, -3px);
+    }
+    100% {
+        background: #ee4a6e;
+        transform: translate(-2px, 2px);
+    }
+}
+.title {
+  margin: 0 0 .5em;
+  font-weight: 900;
+  color: var(--clr-primary);
+  line-height: .8;
+}
