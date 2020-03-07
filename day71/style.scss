@@ -1,0 +1,76 @@
+@import url('https://rsms.me/inter/inter.css');
+html { font-family: 'Inter', sans-serif; }
+@supports (font-variation-settings: normal) {
+  html { font-family: 'Inter var', sans-serif; }
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  //--clr-primary: #ee6352;
+  --clr-primary:#1187fc;
+  --clr-dark: #333;
+  --clr-neutral: #ddd;
+  --clr-light: #fff;
+  width: 100%;
+  height: 100%;
+}
+
+
+body {
+  font-family: Inter, sans-serif;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.125em;
+  line-height: 1.6;
+  color: var(--clr-body);
+  background: var(--clr-neutral);
+  overflow-x: hidden;
+}
+
+a { color: var(--clr-primary); }
+
+.content {
+  background: var(--clr-light);
+  width: 100vw;
+  height: 100vh;
+}
+
+.title {
+  margin: 0 0 .5em;
+  font-weight: 900;
+  color: var(--clr-primary);
+  line-height: .8;
+}
+
+.image {
+    background: url(picture.jpg) no-repeat center center fixed;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+}
+.image::before {
+    content: '';
+    background:none;
+    width: 100%;
+    height: 100%;
+    display: block;
+    animation: flicker .25s infinite;
+}
+@keyframes flicker {
+    0% {
+        //display: block;
+        background: radial-gradient(rgba(243, 241, 149, 0.1), black);
+    }
+    100% {
+        //display: none;
+        background: none;
+    }
+}
