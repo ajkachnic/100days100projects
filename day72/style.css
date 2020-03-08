@@ -1,0 +1,99 @@
+@import url("https://rsms.me/inter/inter.css");
+html {
+  font-family: 'Inter', sans-serif;
+}
+
+@supports (font-variation-settings: normal) {
+  html {
+    font-family: 'Inter var', sans-serif;
+  }
+}
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --clr-primary:#1187fc;
+  --clr-dark: #333;
+  --clr-neutral: #ddd;
+  --clr-light: #fff;
+}
+
+body {
+  font-family: Inter, sans-serif;
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 1.125em;
+  line-height: 1.6;
+  color: var(--clr-body);
+  background: var(--clr-neutral);
+  overflow-x: hidden;
+}
+
+.image {
+  height: 100vh;
+  width: 100vw;
+  background: url(https://i.ibb.co/4MHQNzs/court.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-filter: blur(5px);
+          filter: blur(5px);
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.content {
+  height: 100vh;
+  width: 100vw;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.ball {
+  width: 15rem;
+  height: 15rem;
+  display: block;
+  position: absolute;
+  left: 45vw;
+  right: 60vw;
+  -webkit-animation: bounce .5s alternate infinite;
+          animation: bounce .5s alternate infinite;
+  -webkit-filter: blur(0px);
+          filter: blur(0px);
+}
+
+@-webkit-keyframes bounce {
+  0% {
+    top: 15vh;
+  }
+  100% {
+    top: 70vh;
+  }
+}
+
+@keyframes bounce {
+  0% {
+    top: 15vh;
+  }
+  100% {
+    top: 70vh;
+  }
+}
+/*# sourceMappingURL=style.css.map */
