@@ -1,0 +1,95 @@
+@import url('https://rsms.me/inter/inter.css');
+
+html {
+    font-family: 'Inter', sans-serif;
+}
+
+@supports (font-variation-settings: normal) {
+    html {
+        font-family: 'Inter var', sans-serif;
+    }
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    //--clr-primary: #ee6352;
+    --clr-primary: #363636;
+    --clr-dark: #333;
+    --clr-neutral: #ddd;
+    --clr-light: #fff;
+}
+
+
+body {
+    font-family: Inter, sans-serif;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.125em;
+    line-height: 1.6;
+    color: var(--clr-body);
+    background: var(--clr-neutral);
+    overflow-x: hidden;
+}
+
+a {
+    color: var(--clr-primary);
+}
+
+.content {
+    background: #ff00cc;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #333399, #ff00cc);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #333399, #ff00cc); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    padding: 5rem;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    grid-template-rows: 2fr 3fr;
+}
+
+.title {
+    margin: 3rem 0;
+    font-weight: 600;
+    color: var(--clr-light);
+    line-height: .8;
+    text-align: center;
+    font-size: 2rem;
+
+}
+.search {
+    margin: 0 auto;
+}
+input {
+    width: 60vw;
+    height: 5rem;
+    border: none;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, .25);
+    font-size: 2rem;
+    border-radius: 0;
+    padding-left: 2rem;
+}
+
+button {
+    height: 5rem;
+    width: 5rem;
+    transform: translateY(-.125rem);
+    border: none;
+    background: var(--clr-primary);
+    border-radius: 0;
+
+    svg {
+        fill: white;
+    }
+}
