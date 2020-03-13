@@ -1,0 +1,83 @@
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+:root {
+  --clr-primary: #1187fc;
+  --clr-dark: #333;
+  --clr-neutral: #ddd;
+  --clr-light: #fff;
+}
+
+body {
+  font-family: basic-sans, sans-serif;
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 1.125em;
+  line-height: 1.6;
+  color: var(--clr-body);
+  background: var(--clr-neutral);
+  overflow-x: hidden;
+}
+
+a {
+  color: var(--clr-primary);
+}
+
+.content {
+  width: 60vw;
+  padding: 3em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+.title {
+  margin: 0 0 .5em;
+  font-weight: 900;
+  color: var(--clr-primary);
+  line-height: .8;
+}
+
+button {
+  padding: 1rem 2rem;
+  border: none;
+  font-size: 1.25rem;
+  font-weight: 700;
+  -webkit-transition: .4s transform;
+  transition: .4s transform;
+}
+
+button:hover {
+  -webkit-transform: scale(1.15);
+          transform: scale(1.15);
+}
+
+button.alt {
+  background: #101010;
+  color: #fff;
+}
+
+button.normal {
+  background: rgba(0, 0, 0, 0.15);
+  -webkit-box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.15);
+          box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.15);
+  color: #101010;
+}
+/*# sourceMappingURL=style.css.map */
