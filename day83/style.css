@@ -1,0 +1,112 @@
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: basic-sans, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --clr-primary: #1187fc;
+  --clr-dark: #333;
+  --clr-neutral: #ddd;
+  --clr-light: #fff;
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  min-height: 100vh;
+  display: -ms-grid;
+  display: grid;
+  font-size: 1.125em;
+  line-height: 1.6;
+  color: var(--clr-body);
+  background: #a53ab4;
+  background: linear-gradient(126deg, #a53ab4 0%, #fd1d52 50%, #ffde8a 100%);
+  overflow-x: hidden;
+}
+
+a {
+  color: var(--clr-primary);
+}
+
+.content {
+  width: 70vw;
+  padding: 3em;
+  display: -ms-grid;
+  display: grid;
+  height: 100vh;
+  margin: auto;
+}
+
+.calculator {
+  background: rgba(255, 255, 255, 0.85);
+  border-radius: 15px;
+  margin: auto;
+  width: 25rem;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 1fr 2fr;
+      grid-template-rows: 1fr 2fr;
+}
+
+.calculator h1 {
+  text-align: right;
+}
+
+.calculator .top {
+  background: white;
+  border-radius: 15px 15px 0 0;
+  padding: 1rem .5rem 0 .5rem;
+  font-size: 3rem;
+}
+
+.calculator .buttons {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.calculator .bottom {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 2fr 1fr 1fr;
+      grid-template-columns: 2fr 1fr 1fr;
+}
+
+.calculator .bottom .btn-long {
+  width: 100%;
+}
+
+.btn {
+  margin: auto;
+  font-size: 2rem;
+  width: 100%;
+  height: 100%;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  padding: .5rem 1rem;
+  cursor: pointer;
+}
+
+.btn span {
+  margin: auto;
+}
+
+.alt {
+  background: #fc8e11;
+  width: 100%;
+  height: 100%;
+  color: white;
+  font-size: 3rem;
+  display: -ms-grid;
+  display: grid;
+}
+
+.alt span {
+  margin: auto;
+}
+/*# sourceMappingURL=style.css.map */
