@@ -1,0 +1,104 @@
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: basic-sans, sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+:root {
+  --clr-primary:#1187fc;
+  --clr-dark: #333;
+  --clr-neutral: #ddd;
+  --clr-light: #fff;
+}
+
+body {
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 1.125em;
+  line-height: 1.6;
+  color: var(--clr-body);
+  background: var(--clr-primary);
+  overflow-x: hidden;
+}
+
+a {
+  color: var(--clr-primary);
+}
+
+.content {
+  background: var(--clr-light);
+  width: 100%;
+  max-width: 800px;
+  padding: 3em;
+  -webkit-box-shadow: 0 0 3em rgba(0, 0, 0, 0.15);
+          box-shadow: 0 0 3em rgba(0, 0, 0, 0.15);
+}
+
+.title {
+  margin: 0 0 .5em;
+  font-weight: 900;
+  color: var(--clr-primary);
+  line-height: .8;
+}
+
+.tos {
+  display: -ms-grid;
+  display: grid;
+}
+
+.tos__body {
+  padding: 2rem;
+  height: 50vh;
+  overflow-y: scroll;
+}
+
+.tos__menu {
+  margin: 1rem auto;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  width: 20rem;
+  gap: 1rem;
+}
+
+button {
+  padding: .5rem;
+  font-weight: 600;
+  font-size: 1.25rem;
+  background: var(--clr-primary);
+  border: none;
+  color: white;
+  border-radius: 2px;
+  -webkit-box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+  -webkit-transition: -webkit-box-shadow .5s, -webkit-filter .5s;
+  transition: -webkit-box-shadow .5s, -webkit-filter .5s;
+  transition: box-shadow .5s, filter .5s;
+  transition: box-shadow .5s, filter .5s, -webkit-box-shadow .5s, -webkit-filter .5s;
+}
+
+button:hover {
+  -webkit-box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.2);
+  -webkit-filter: brightness(0.95);
+          filter: brightness(0.95);
+}
+
+.alt {
+  background: var(--clr-neutral);
+  color: black;
+}
+/*# sourceMappingURL=style.css.map */
