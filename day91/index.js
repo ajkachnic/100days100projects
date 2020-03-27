@@ -13,7 +13,7 @@ function runTheorem(a, b, c) {
       }
       else {
         return false
-      }
+      }6.5
     } else {
       return `c = ${Math.sqrt((a ** 2) + (b ** 2))}`
     }
