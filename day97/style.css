@@ -1,0 +1,80 @@
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --clr-primary:#1187fc;
+  --clr-dark: #333;
+  --clr-neutral: #ddd;
+  --clr-light: #fff;
+}
+
+body {
+  font-family: basic-sans, sans-serif;
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 1.125em;
+  line-height: 1.6;
+  color: var(--clr-body);
+  background: var(--clr-neutral);
+  overflow-x: hidden;
+}
+
+a {
+  color: var(--clr-primary);
+}
+
+.content {
+  background: var(--clr-light);
+  width: 95vw;
+  max-width: 40rem;
+  padding: 3em;
+  -webkit-box-shadow: 0 0 3em rgba(0, 0, 0, 0.15);
+          box-shadow: 0 0 3em rgba(0, 0, 0, 0.15);
+}
+
+.content .grid .bar {
+  --color: #65ff51;
+  --width: 100%;
+  background: var(--color);
+  width: var(--width);
+  height: 1.5rem;
+  -webkit-transition: background .4s, width .4s;
+  transition: background .4s, width .4s;
+  border-radius: 5px;
+  position: relative;
+}
+
+.content .grid .bar::before {
+  content: 'SIZE';
+  margin-left: -2.5rem;
+  font-size: .95rem;
+  position: absolute;
+  font-weight: 700;
+}
+
+.title {
+  margin: 0 0 .5em;
+  font-weight: 900;
+  color: var(--clr-primary);
+  line-height: .8;
+}
+
+p {
+  color: #505050;
+  margin: 1em 0;
+}
+/*# sourceMappingURL=style.css.map */
